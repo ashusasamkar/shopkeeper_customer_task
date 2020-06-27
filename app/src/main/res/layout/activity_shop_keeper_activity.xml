@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/shopkeeperActivity"
+
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".ShopKeeper_activity">
+
+    <EditText
+        android:id="@+id/item_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="50dp"
+        android:hint="Enter Item Name :"
+        />
+    <EditText
+        android:id="@+id/item_price"
+        android:inputType="numberDecimal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Enter Item Price(Per Quantity Unit) :"
+        />
+    <EditText
+        android:id="@+id/item_quantity"
+        android:inputType="number"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Enter Item's Quantity :"
+        />
+    <Button
+    android:id="@+id/add_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+    android:text="Add Items"
+    android:background="@color/colorAccent"
+        />
+
+    <Button
+        android:id="@+id/cust_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:textStyle="bold"
+        android:text="Click to View customer ordered details"
+        android:background="#33FFB3"
+        />
+    <Button
+        android:id="@+id/logout_shop_btn"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="logout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorAccent"
+        android:layout_marginRight="10dp"
+        />
+</LinearLayout>
